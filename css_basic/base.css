@@ -38,6 +38,13 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+    display: flex;
+    flex-direction: column;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    flex: auto;
 }
 blockquote, q {
 	quotes: none;
@@ -98,12 +105,15 @@ a {
 
 article {
 	padding: 50px 15px;
+    flex:2;
 }
 article > *:first-child {
 	margin-top: 0;
 }
 aside {
 	padding: 50px 15px;
+    flex: 1;
+    
 }
 header .right {
 	float: right;
