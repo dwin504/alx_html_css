@@ -1,4 +1,5 @@
 body{
+
     display: flex;
     flex-direction: column;
 }
@@ -15,4 +16,38 @@ aside{
 }
 article,aside{
     overflow:auto;
+}
+header{
+    background-color: rgb(0, 255, 238);
+}
+header nav{
+    justify-content: flex-end;
+    text-align: justify;
+
+}
+.nav-right{
+    float: right;
+}
+.nav-right li{
+gap: 3em;
+}
+.nav-right a{
+    color:black;
+}
+
+.hero h2{
+    margin-top: 2em;
+    margin-bottom: 2.6em;
+    margin-right:40% ;
+    text-align: center;
+
+}
+.hero p{
+    display: flex;
+    text-align:center;
+    margin-bottom: 7em;
+    border: 1px solid #bbb;
+	height: 2cm;
+    padding: 4em;
+   
 }
