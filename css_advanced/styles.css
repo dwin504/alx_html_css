@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    
+    padding: 0;
+    font-family: sans-serif;
+}
+header{
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+}
+
+
+header nav{
+    align-items: center;
+    justify-content: flex-end;
+}
+header nav ul{
+     display: flex;
+     justify-content: flex-end;
+     margin-right: 40px;
+     margin-top: -70px ;
+     align-items: center;
+     list-style: none;
+     gap: 30px;
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 50px;
+
+}
+header nav ul li a {
+  color:white;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  gap:30px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  padding: 50px 2px;
+  margin-left: 40px;
+  
+}
+
+.logo img {
+  height: 29px; /* Adjust to your preferred size */
+  width: 167px;
+  object-fit: contain;
+}
+
+/*styling the hero section*/
+.hero-section{
+    display: flex;
+   background-image: url("assets/CSS Advanced/Object.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  max-width: 1440px;
+  height: 1093px;
+  margin: 0 auto;
+    position: relative;
+    color: white;
+    justify-content: center;
+    margin-top: -52.5px;
+    
+}
+.hero-content h1{
+    font-size: 120px;
+    font-weight: bold;
+    margin-top: -300px;
+    display: inline-block;
+
+}
+.hero-content {
+      display: flex;
+      flex-direction: column;
+  justify-content: center;   /* center the items horizontally */
+  align-items: center;       /* align items vertically */
+  gap: 20px;                 /* space between the spans */
+ 
+}
+.hero-tags {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 0;
+}
+span{
+    font-size: 16px;
+    font-weight: bold;
+    
+}
+.hero-btn{
+     margin-top: 20px;
+  padding: 15px 30px;
+  font-size: 14px;
+  font-weight:bold;
+  border: none;
+  background-color: #C271FF;
+  color:white;
+  cursor: pointer;
+  border-radius: 30px;
+   box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.7);
+
+}
+.pros {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top:300px;
+  text-align: center;
+  color: white;
+  padding: 40px 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+.pros > div {
+  display: flex;
+   flex-direction: row;/* Horizontal layout */
+  gap: 40px;
+  flex-wrap: nowrap;   /* Keep everything on one line */
+  justify-content: center;
+}
