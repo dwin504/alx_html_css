@@ -19,13 +19,18 @@ header{
 
 header nav{
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 header nav ul{
      display: flex;
      justify-content: flex-end;
      margin-right: 40px;
-     margin-top: -70px ;
+     margin-top: 10px ;
      align-items: center;
      list-style: none;
      gap: 30px;
@@ -46,39 +51,43 @@ header nav ul li a {
 .logo {
   display: flex;
   align-items: center;
-  padding: 50px 2px;
+  padding: 20px 0px;
   margin-left: 40px;
-  
+  justify-content: flex-start;
 }
 
 .logo img {
+  display: block;
   height: 29px; /* Adjust to your preferred size */
   width: 167px;
-  object-fit: contain;
+  margin-right: 0px;
+ 
+  
 }
 
 /*styling the hero section*/
 .hero-section{
-    display: flex;
-   background-image: url("assets/CSS Advanced/Object.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-  max-width: 1440px;
-  height: 1093px;
-  margin: 0 auto;
-    position: relative;
-    color: white;
-    justify-content: center;
-    margin-top: -52.5px;
+      background-image: url("assets/CSS Advanced/Object.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 80px;
     
 }
 .hero-content h1{
     font-size: 120px;
     font-weight: bold;
-    margin-top: -300px;
-    display: inline-block;
+    margin-top: 70px;
+    
 
 }
 .hero-content {
@@ -93,12 +102,22 @@ header nav ul li a {
   display: flex;
   justify-content: center;
   gap: 40px;
-  margin-top: 0;
+  margin-top: 30px;
 }
-span{
+#smile{
     font-size: 16px;
     font-weight: bold;
     
+}
+#grin {
+  font-size: 16px;
+    font-weight: bold;
+
+}
+#laugh{
+  font-size: 16px;
+    font-weight: bold;
+
 }
 .hero-btn{
      margin-top: 20px;
@@ -113,20 +132,182 @@ span{
    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.7);
 
 }
+#purple {
+  font-size: 32px;
+  color:#C271FF;
+  margin-right: 10px;
+   
+
+}
+.pros h2{
+  font-size: 32px;
+  margin-bottom: 50px;
+}
 .pros {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  margin-top:300px;
   text-align: center;
   color: white;
-  padding: 40px 0;
-  background: rgba(0, 0, 0, 0.3);
+  padding: 200px 20px 0;
+ 
 }
 .pros > div {
   display: flex;
    flex-direction: row;/* Horizontal layout */
-  gap: 40px;
-  flex-wrap: nowrap;   /* Keep everything on one line */
+  gap: 10px;
+  flex-wrap:wrap;   /* Keep everything on one line */
   justify-content: center;
+  margin-top: 50px;
+}
+.pros > div > div {
+  width: 140px;
+  text-align: center;
+  justify-content: space-between;
+  margin-left: 40px;
+  margin-right: 50px;
+  
+}
+
+.pros > div > div img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+.boldy{
+  font-size: 17px;
+}
+.italic {
+  font-style: italic;
+  font-weight: 400;
+}
+/* section: second (testmonial) */
+
+.second{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+  width: 100%;
+  height: 392px;
+  gap: 40px;
+  color: white;
+  background-color:#C271FF ;
+  
+}
+.second img {
+   max-width: 200px;
+  width: 100%;
+  border-radius: 10px;
+  margin-left: 80px;
+
+}
+.second > div {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align:left;
+  padding: 0px;
+  
+}
+
+.second div blockquote {
+  margin-bottom: 10px;
+  font-size: 22px;
+  line-height: 33px;
+  
+}
+.second > div h3 {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.weather{
+  font-style: italic;
+}
+.third{
+  padding: 100px 50px;
+  text-align: center;
+  background-color: white;
+  margin-right: 20px;
+
+}
+.third h2{
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 40px;
+  
+
+}
+.third .purple {
+  color: #C271FF;
+  font-weight: bold;
+}
+.popular-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px
+}
+.popular-card{
+  background-color: #fff;
+  border-radius: 10px 60px 10px 10px;
+  width:23%;
+  padding:0;
+}
+.video-thumb{
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.video-thumb img:first-child {
+  width: 100%;
+  border-radius: 10px 10px 0px 0;
+}
+.text{
+  text-align: left;
+  line-height: 30px;
+}
+.text p{
+  color: #07162980;
+}
+.play-btn{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  transform: translate(-50%, -50%);
+}
+.author{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+.author img{
+  width: 20%;
+}
+.rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.stars {
+  display: flex;
+  
+ 
+}
+.stars i{
+  color: #C271FF;
+  margin-right: 10px;
+}
+.stars i.faded {
+  color: #D8D8D8; /* Light gray for inactive star */
+}
+.time{
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 90px;
 }
