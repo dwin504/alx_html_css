@@ -311,3 +311,84 @@ header nav ul li a {
   justify-content: flex-end;
   margin-bottom: 90px;
 }
+.membership{
+  padding: 80px 50px;
+  text-align: center;
+  background-color: #071629;
+  color: #fff;
+}
+.purple{
+  color: #C271FF;
+}
+.smiley{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+.smile-icon{
+  text-align: center;
+  line-height: 26px;
+  width: 257px;
+  height: 153px;
+}
+.smiley-text{
+  font-size: 14px;
+  line-height: 26px;
+}
+.faq{
+  padding: 100px 50px;
+  background-color: #fff;
+  text-align: center;
+}
+.faq h2{
+  font-size: 60px;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+.faq-contaier {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.faq-column{
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  text-align: left;
+  flex: 1;
+}
+.faq-item h3{
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+
+}
+.faq-item p{
+  font-size: 14px;
+  line-height: 24px;
+  color:#07162980;
+
+}
+.footer-container{
+  background-color: #071629;
+  padding: 45px;
+  color: #fff;
+}
+.last-page{
+  display: flex;
+  justify-content: space-between;
+}
+.three-icons{
+  display: flex;
+  gap: 20px;
+  margin-right: 150px;
+}
+.end-word{
+  font-size: 12px;
+  color: grey;
+  text-align: center;
+  margin-top: 50px;
+}
